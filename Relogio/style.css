@@ -1,6 +1,32 @@
 body{
     background-color: rgb(19, 17, 17);
 }
+@keyframes neon{
+
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+div#autor{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    border: groove #c8e32e;
+    border-radius: 5px;
+    font-family:  monospace;
+    font-family: "Segoe UI",sans-serif;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 25pt;
+
+
+    animation: neon 0s alternate ease-in-out;
+    --cor-neon: $ffbe0b;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,0,0,0.1));
+}
 #tempo{
     position: absolute;
     top: 50%;
@@ -14,7 +40,16 @@ body{
     font-size: 50pt;
     font-family: "Segoe UI",sans-serif;
     background: rgb(26, 25, 25);
-    border:solid 5px #aa2ee3;
+    border:groove 5px #aa2ee3;
     border-radius: 5px;
+    
+    animation: neon 0s alternate ease-in-out;
+    --cor-neon: $ffbe0b;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255,0,0,0.1));
 }
+
+    
+
+
+
+
